@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #yes{
+        position: absolute;
+        left: 800px;
+        width: 100px;
+        background-color: #ff007f;
+    }
+    #no{
+        position: absolute;
+        left: 300px;
+        width: 100px;
+        background-color: #005fbf;
+    }
+    body{
+       
+        background-color: cyan;
+
+    }
+    h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .hop{
+        text-align: center;
+    }
+</style>
+<body>
+    <script>
+        var hoveredNo = function () {
+            var btn = document.getElementById("no");
+            var top = Math.floor(Math.random()*400);
+            var left = Math.floor(Math.random()*800);
+
+             btn.style.top= top;
+             btn.style.left= left;
+        }
+        var clickyes = function(){
+            alert("chúc mừng sinh nhật em  ");
+        
+
+        }
+    </script>
+    <h1> Nay Sinh Nhật Vui chứ ?</h1>
+    <div class="hop">
+    <button id = "yes" onclick="clickyes()"> không, nay không hề vui</button>
+    <button id = "no" onmouseover="hoveredNo()">Có , nay rất vui</button>
+</div>
+</body>
+</html>
